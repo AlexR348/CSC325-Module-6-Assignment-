@@ -1,0 +1,66 @@
+/* Menu Bar Styling */
+.menu-bar {
+    -fx-background-color: #8B4513;  /* Brown color */
+    -fx-text-fill: white;
+}
+
+/* TableView Styling */
+.table-view {
+    -fx-background-color: white;
+    -fx-border-color: grey;
+}
+
+/* Form and Buttons */
+.text-field {
+    -fx-background-color: white;
+    -fx-border-color: grey;
+}
+
+.button {
+    -fx-background-color: #A0522D;  /* Brown button */
+    -fx-text-fill: white;
+}
+.button:hover {
+    -fx-background-color: #CD853F; /* Lighter brown on hover */
+}
+.table-view .column-header {
+    -fx-background-color: #8B4513; /* Brown for header */
+    -fx-text-fill: white; /* White text */
+}
+.text-field {
+    -fx-padding: 5;
+    -fx-margin: 5;
+}
+
+.button {
+    -fx-padding: 10;
+    -fx-margin: 5;
+}
+
+.vbox {
+    -fx-padding: 10; /* Add padding to VBoxes */
+}
+
+.hbox {
+    -fx-padding: 10; /* Add padding to HBoxes */
+}
+.vbox {
+    -fx-background-color: #F0F8FF; /* Light blue background */
+}
+
+.hbox {
+    -fx-background-color: #FFFFFF; /* White background */
+}
+.error-message {
+    -fx-text-fill: red;
+    -fx-font-weight: bold;
+}
+lastNameField.setId("lastNameField");
+departmentField.setId("departmentField");
+majorField.setId("majorField");
+emailField.setId("emailField");
+imageURLField.setId("imageURLField");
+clearButton.setId("clearButton");
+addButton.setId("addButton");
+deleteButton.setId("deleteButton");
+editButton.setId("editButton");
