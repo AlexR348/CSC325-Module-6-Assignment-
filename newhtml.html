@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Profile</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background: linear-gradient(to bottom, #fff 0%, #ddd 100%);
+        }
+        h1 {
+            color: #4CAF50;
+            text-align: center;
+        }
+        #profilePicture {
+            display: block;
+            margin: 0 auto;
+            max-width: 200px; /* Adjust size as needed */
+            border-radius: 50%; /* For a circular profile picture */
+        }
+        #loadingMessage {
+            text-align: center;
+            font-size: 1.2em;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <h1>Welcome to the Car Maintenance Tracker</h1>
+    <p id="loadingMessage">Your profile information is being loaded...</p>
+    <img src="firebase-storage-url" alt="Profile Picture" id="profilePicture">
+    
+    <script>
+        "use strict";
+        
+        window.onload = function () {
+            // Fetch and display the user profile picture from Firebase
+            fetchUserProfilePicture();
+        }
+
+        function fetchUserProfilePicture() {
+            // Replace 'firebase-storage-url' with the actual URL of the profile picture
+            const profilePicElement = document.getElementById('profilePicture');
+            const firebaseStorageUrl = 'https://console.firebase.google.com/u/2/project/csc-325-module-6-assignment/storage/csc-325-module-6-assignment.appspot.com/files'; // Set your Firebase URL
+
+            // Simulating an asynchronous operation (like fetching from Firebase)
+            setTimeout(() => {
+                profilePicElement.src = firebaseStorageUrl; // Update the src attribute to show the image
+                document.getElementById('loadingMessage').style.display = 'none'; // Hide loading message
+            }, 2000); // Simulate a 2-second loading time
+        }
+    </script>
+</body>
+</html>
